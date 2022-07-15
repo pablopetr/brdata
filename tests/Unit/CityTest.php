@@ -49,6 +49,14 @@ class CityTest extends TestCase
     }
 
     /** @test */
+    public function it_should_generate_a_city_as_string_type()
+    {
+        $city = $this->generator->generate();
+
+        $this->assertIsString($city);
+    }
+
+    /** @test */
     public function it_should_generate_city_related_to_a_state()
     {
         $state = array_rand($this->citiesStates);

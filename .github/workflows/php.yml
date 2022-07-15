@@ -11,9 +11,6 @@ jobs:
       
       - name: Validate composer.json and composer.lock
         run: composer validate --strict
-        
-      - name: Verify code style with php-cs-fixer
-        run: composer run check-style
       
       - name: Run unit tests
         run: vendor/bin/phpunit .

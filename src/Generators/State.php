@@ -10,9 +10,9 @@ class State extends Factory
 
     public function __construct()
     {
-        $stateFiles = file_get_contents("src/Generators/cities.json");
+        $statesFile = file_get_contents("src/Generators/cities.json");
 
-        $json = json_decode($stateFiles, true);
+        $json = json_decode($statesFile, true);
         $this->states = (array)$json;
     }
 

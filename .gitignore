@@ -1,4 +1,4 @@
 .php-cs-fixer.cache
 index.php
 .idea/
-/vendor
+vendor/

@@ -25,6 +25,7 @@
   },
   "scripts": {
     "check-style": "php-cs-fixer fix --diff --verbose --dry-run .",
-    "fix-style": "php-cs-fixer fix ."
+    "fix-style": "php-cs-fixer fix .",
+    "test": "./vendor/bin/phpunit ."
   }
 }

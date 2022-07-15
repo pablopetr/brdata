@@ -1,0 +1,32 @@
+{
+  "name": "pablopetr/brdata",
+  "description": "Brazilian data factory generator",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pablo Eliézer",
+      "email": "opablopetr@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PabloPETR\\": "src/",
+      "Test\\": "tests"
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "phpunit/phpunit": "^9.5",
+    "fakerphp/faker": "^1.19",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.9"
+  },
+  "scripts": {
+    "check-style": "php-cs-fixer fix --diff --verbose --dry-run .",
+    "fix-style": "php-cs-fixer fix .",
+    "test": "./vendor/bin/phpunit ."
+  }
+}

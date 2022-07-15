@@ -10,7 +10,7 @@ class CPF extends Factory
 
     private $state;
 
-    public const EMITTING_REGION =
+    const EMITTING_REGION =
     [
         "DF" => 1,
         "GO" => 1,
@@ -52,10 +52,7 @@ class CPF extends Factory
         $cpf = $this->faker->regexify("\d{8}");
         $cpf .= (string)self::EMITTING_REGION[$this->state];
         $cpf .= $this->calculateCheckDigit($cpf);
-
-        echo $cpf."\n\n\n";
         $cpf .= $this->calculateCheckDigit($cpf);
-
 
         return $cpf;
     }

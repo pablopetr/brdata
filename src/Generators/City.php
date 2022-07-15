@@ -20,7 +20,7 @@ class City extends Factory
 
     public function generate()
     {
-        if(!$this->state) {
+        if (!$this->state) {
             $this->state = array_rand($this->cities);
         }
 

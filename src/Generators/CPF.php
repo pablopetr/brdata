@@ -10,7 +10,7 @@ class CPF extends Factory
 
     private $state;
 
-    const EMITTING_REGION =
+    public const EMITTING_REGION =
     [
         "DF" => 1,
         "GO" => 1,

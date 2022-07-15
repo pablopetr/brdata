@@ -28,8 +28,8 @@ class CityTest extends TestCase
     public function getArrayValues(array $array): array
     {
         $values = [];
-        foreach($array as $value) {
-            if(is_array($value)) {
+        foreach ($array as $value) {
+            if (is_array($value)) {
                 $values = array_merge($values, $this->getArrayValues($value));
             } else {
                 $values[] = $value;
